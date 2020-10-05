@@ -1,0 +1,39 @@
+dn:ou=groups, dc=example, dc=org
+objectclass: top
+objectclass: organizationalUnit
+ou: groups
+
+dn:ou=people, dc=example, dc=org
+objectclass: top
+objectclass: organizationalUnit
+ou: people
+
+dn: cn=myuser, ou=people, dc=example, dc=org
+cn: myuser
+sn: test
+objectclass: top
+objectclass: person
+objectclass: posixAccount
+objectclass: shadowAccount
+uid:myuser
+userpassword:{CRYPT}$6$jCs7/E85W7Pszd1/$G74jX0ahVnE/3gJ6jl7NETCGtL4TEowW20VCfulj1shhzSpWDbZSq8byF2G1Q3oQm4mjhF87ws5O7kKHARejx1
+uidnumber:10004
+gidnumber:10000
+gecos:myuser
+loginShell:/bin/sh
+homeDirectory: /home/myuser
+shadowLastChange:10877
+shadowMin: 0
+shadowMax: 999999
+shadowWarning: 7
+shadowInactive: -1
+shadowExpire: -1
+shadowFlag: 0
+
+dn: cn=mygroup, ou=groups, dc=example, dc=org
+objectclass: top
+objectclass: posixGroup
+cn: mygroup
+gidnumber: 10000
+memberuid: giuseppe
+memberuid: anotheruser

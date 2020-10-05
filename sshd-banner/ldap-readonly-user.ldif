@@ -1,0 +1,4 @@
+dn: cn=readonly,ou=people,dc=example,dc=org
+cn: readonly
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
