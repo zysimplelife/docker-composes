@@ -17,5 +17,7 @@ docker-compose exec  open-ldap ldapadd -x -D "cn=admin,dc=example,dc=org" -w adm
 getent passwd
 
 #run pam client to test authentication process
-/check_user
+/user_checker
+Username: myuser
+Password: password
 ```

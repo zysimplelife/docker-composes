@@ -12,3 +12,6 @@ services:
       - ./:/workspace
   client:
     build: .
+    user: appuser
+    cap_drop:
+      - ALL
