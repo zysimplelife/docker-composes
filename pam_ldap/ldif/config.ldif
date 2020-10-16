@@ -1,0 +1,5 @@
+dn: cn=config
+changetype: modify
+add: olcAuthzRegexp
+olcAuthzRegexp: cn=admin,o=([^,]+),st=stockholm,c=se
+    cn=admin,dc=example,dc=org
